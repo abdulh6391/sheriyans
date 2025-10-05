@@ -1,0 +1,35 @@
+.container {
+	display: grid;
+	grid-template-columns: 200px 1fr; /* sidebar + main */
+	grid-template-rows: 80px 1fr 60px; /* header, content, footer */
+
+	/* Define grid areas layout */
+	grid-template-areas:
+		'header header'
+		'sidebar sidebar'
+		'footer footer'
+    'main';
+
+	gap: 10px;
+}
+
+/* Assign each element to a named area */
+header {
+	grid-area: header;
+	background: lightblue;
+}
+
+aside {
+	grid-area: sidebar;
+	background: lightgreen;
+}
+
+main {
+	grid-area: main;
+	background: red;
+}
+
+footer {
+	grid-area: footer;
+	background: lightcoral;
+}
