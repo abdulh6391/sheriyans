@@ -14,9 +14,10 @@ html {
 	color: #e8e8e8;
 }
 .navbar {
-	background-color: orangered;
 	display: flex;
 	padding: 1rem;
+  justify-content: space-between;
+  box-shadow: 1px 1px 8px;
 }
 
 .logo {
@@ -25,12 +26,19 @@ html {
 }
 
 nav{
-  display: flex;
   gap: 1rem;
+  display: flex;
+  /* width: 400px; */
+  justify-content: center;
+  align-items: center;
 
 }
 
 a{
   color: white;
   text-decoration: none;
+  opacity: .6;
+}
+a:hover{
+  opacity: 1;
 }
